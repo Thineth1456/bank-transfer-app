@@ -23,6 +23,9 @@ public class Customer {
     @Column(unique = true, nullable = false)
     private String accountNumber;
 
+    @Column(unique = true, nullable = false)
+    private String email;
+
     @Column(precision = 14, scale = 2, nullable = false)
     private BigDecimal balance;
 }
